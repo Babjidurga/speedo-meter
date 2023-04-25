@@ -1,5 +1,5 @@
 import React from 'react'
-import Counter from './components/Counter/index'
+import Counter from './components/Speedometer/index'
 
 const App = () => {
   return (
