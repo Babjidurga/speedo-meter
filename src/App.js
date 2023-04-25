@@ -1,10 +1,10 @@
 import React from 'react'
-import Welcome from './components/Counter/index'
+import Counter from './components/Counter/index'
 
 const App = () => {
   return (
     <div>
-        <Welcome />
+        <Counter />
     </div>
   )
 }

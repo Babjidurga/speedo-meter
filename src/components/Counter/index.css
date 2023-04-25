@@ -1,36 +1,50 @@
-.container{
+.home{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 150px;
-    border: 2px solid rgb(171, 167, 167);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(233, 190, 190);
     padding: 10px;
-    position: relative;
-    border-radius: 16px;
-    margin-top: 20%;
-}
-.name{
-    font-size: 30px;
     text-align: center;
 }
-.value{
+.main-head{
+    font-size: 35px;
+    font-family: "Roboto";
+    color:black;
+}
+.main-para{
     font-size: 20px;
-    text-align: center;
-    font-style: oblique;
-    font-weight: 600;
+    font-family: "Roboto";
+    color:black;
 }
-.b-con{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.button{
-    width: auto;
-    border: 1px solid rgb(181, 215, 130);
+.click-button{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
     border-radius: 16px;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: rgb(99, 246, 231);
+    background: rgb(55, 177, 233);
+    border: 0 solid;
 }
-
+span{
+    color: rgb(181, 39, 225);
+    font-size: 38px;
+}
+@media screen and (max-width:468px){
+    .main-head{
+        font-size: 20px;
+    }
+    .main-para{
+        font-size: 16px;
+    }
+    .click-button{
+        width: 80px;
+        font-size: 16px;
+        padding: 2px;
+        height: 30px;
+    }
+    span{
+        font-size: 20px;
+    }
+}

@@ -1,34 +1,21 @@
-import { Component } from "react";  
+import React, { Component } from 'react'
 import './index.css'
 
- class Welcome extends Component{
+class Counter extends Component{
     state = {count:0}
-    onIncrement = () =>{
-        this.setState((prevState) => (
-            {count: prevState.count + 1}))
-    }
-    onDecrement = () =>{
-        this.setState((prevState) => ({count: prevState.count - 1}))
-    }
-    reset = () =>{
-        this.setState((prevState) => ({count: 0}))
+    
+    onIncrement = () => {
+        this.setState((prevState) => ({count: prevState.count + 1}))
     }
     render(){
-
         const {count} = this.state
-        console.log({count})
         return(
-            <div className="container">
-                    <h1 className="name"> Counter</h1>
-                    <p className="value">{count}</p>
-                    <div className="b-con">
-                        <button className="button" onClick={this.onIncrement}>Increment</button>
-                        <button className = "button" onClick={this.onDecrement}>Decrement</button>
-                        <button className = "button" onClick={this.reset}>Reset</button>
-                    </div>
-            </div>
-        )
+        <div className='home'>
+            <h1 className='main-head'>The Button had been clicked <span>{count}</span> of times</h1>
+            <p className='main-para'> CLick the button to increase the count</p>
+            <button className = "click-button" onClick={this.onIncrement}>Click Me</button>
+        </div> )
     }
- }
+}
 
- export default Welcome
+export default Counter
